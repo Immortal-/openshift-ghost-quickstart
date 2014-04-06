@@ -45,7 +45,9 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://'+process.env.OPENSHIFT_APP_DNS,
-        mail: {},
+        mail: {
+            fromaddress: 'chris@fbi.al',
+        },
         database: {
             client: 'sqlite3',
             connection: {
